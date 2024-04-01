@@ -1,0 +1,18 @@
+CC = gcc
+CFLAGS = -std=c90 -Wall -Werror -Wpedantic
+OBJ = main.o
+EXE = out
+
+all: $(EXE)
+
+run: $(EXE)
+	./$(EXE)
+
+$(EXE): $(OBJ)
+	$(CC) $(OBJ) $(CFLAGS) -o $(EXE)
+
+main.o: main.c
+	$(CC) $(CFLAGS) -c main.c -o main.o
+
+clean:
+	rm -rf *.o $(EXE)
