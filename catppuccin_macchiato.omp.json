@@ -6,6 +6,7 @@
         "pink": "#F5BDE6",
         "lavender": "#B7BDF8",
         "blue":  "#8AADF4",
+        "e_blue": "#299EE0",
         "teal": "#8BD5CA"
   },
   "blocks": [
@@ -36,7 +37,7 @@
           "type": "path"
         },
         {
-          "foreground": "p:lavender",
+          "foreground": "p:e_blue",
           "properties": {
             "branch_icon": "\ue725 ",
             "cherry_pick_icon": "\ue29b ",
@@ -56,8 +57,19 @@
         {
           "foreground": "p:teal",
           "style": "plain",
-          "template": "{{ if .Error }}{{ .Error }}{{ else }}{{ if .Version }}\uf487 {{.Version}}{{ end }} {{ if .Name }}{{ .Name }}{{ end }}{{ end }} ",
+          "template": "{{ if .Error }}{{ .Error }}{{ else }}{{ if .Name }}{{ .Name }}{{ end }} {{ if .Version }}v{{.Version}}{{ end }}{{ end }} ",
           "type": "project"
+        },
+        {
+          "foreground": "p:teal",
+          "style": "plain",
+          "properties": {
+            "fetch_version": false,
+            "display_mode": "files",
+            "home_enabled": true
+          },
+          "template": "\ue627{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ",
+          "type": "go"
         },
         {
           "foreground": "p:teal",
@@ -67,7 +79,7 @@
             "display_mode": "files",
             "home_enabled": true
           },
-          "template": "\uE7BA {{ if .Error }}{{ .Error }}{{ else }}{{ end }}",
+          "template": "\uE7BA{{ if .Error }}{{ .Error }}{{ else }}{{ end }} ",
           "type": "react"
         },
         {
@@ -78,7 +90,7 @@
             "display_mode": "files",
             "home_enabled": true
           },
-          "template": "\uE738 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ",
+          "template": "\uE738{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ",
           "type": "java"
         },
         {
@@ -89,7 +101,7 @@
             "display_mode": "context",
             "home_enabled": true
           },
-          "template": "\ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
+          "template": "\udb80\udf20 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} (.venv) {{ end }}{{ end }}",
           "type": "python"
         },
         {
