@@ -5,84 +5,119 @@
     "color": {
       "1": "blue",
       "2": "white"
+    },
+    "padding": {
+      "top": 2,
+      "left": 1
     }
   },
   "display": {
+    "separator": " -> ",
     "showErrors": true,
-    "color": "blue"
+    "color": "blue",
   },
   "modules": [
     {
+        "type": "break"
+    },
+    {
+      "type": "custom",
+      "format": "┌─────────────────── Software Specs ───────────────────┐",
+      "outputColor": "blue"
+    },
+    {
+        "type": "break"
+    },
+    {
       "type": "title",
-      "key": " "
+      "key": "  \uf2bd "
     },
     {
       "type": "os",
-      "key": "\uF30A "
+      "key": "  \uF30A "
     },
     {
       "type": "kernel",
-      "key": "\uEBC6 "
+      "key": "  \uEBC6 "
     },
     {
       "type": "uptime",
-      "key": "\uDB81\uDD35 "
+      "key": "  \uDB81\uDD35 "
     },
     {
       "type": "packages",
-      "key": "\uDB81\uDDC4 "
+      "key": "  \uDB81\uDDC4 "
     },
     {
       "type": "terminal",
-      "key": "\uF489 "
+      "key": "  \uF489 "
     },
     {
       "type": "shell",
-      "key": "\uEBCA "
+      "key": "  \uEBCA "
     },
     {
       "type": "terminalfont",
-      "key": "\uE659 "
+      "key": "  \uE659 "
     },
     {
       "type": "de",
-      "key": "\uDB82\uDDE8 "
+      "key": "  \uDB82\uDDE8 "
     },
     {
       "type": "wm",
-      "key": "\uF2D2 "
+      "key": "  \uF2D2 "
     },
     {
-      "type": "display",
-      "key": "\uDB80\uDF79 ",
-      "compactType": "scaled-with-refresh-rate",
-      "preciseRefreshRate": false
+        "type": "break"
+    },
+    {
+        "type": "custom",
+        "format": "├─────────────────── Hardware Specs ───────────────────┤",
+        "outputColor": "blue"
+    },
+    {
+        "type": "break"
     },
     {
       "type": "cpu",
-      "key": "\uF4BC ",
+      "key": "  \uF4BC ",
       "temp": true,
       "format": "{1} ({5}) @ {7}GHz - {8}"
     },
     {
       "type": "gpu",
-      "key": "\uF03D ",
+      "key": "  \uF03D ",
       "temp": true,
       "hideType": "integrated",
       "format": "{2} - {4}"
     },
     {
+      "type": "display",
+      "key": "  \uDB80\uDF79 ",
+      "compactType": "scaled-with-refresh-rate",
+      "preciseRefreshRate": false
+    },
+    {
       "type": "memory",
-      "key": "\uDB81\uDC6D "
+      "key": "  \uDB81\uDC6D "
     },
     {
       "type": "disk",
-      "key": "\uF0A0 ",
+      "key": "  \uF0A0 ",
       "format": "{10} - {1} / {2} ({3}) - {9}"
     },
     {
       "type": "locale",
-      "key": "\uF450 "
+      "key": "  \uF450 "
+    },
+    {
+        "type": "break"
+    },
+    {
+      "type": "custom",
+      "format": "└──────────────────────────────────────────────────────┘",
+      "outputColor": "blue"
     },
     {
       "type": "break"
