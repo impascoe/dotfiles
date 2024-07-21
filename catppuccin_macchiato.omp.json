@@ -90,7 +90,7 @@
             "display_mode": "files",
             "home_enabled": true
           },
-          "template": "\uE738{{ if .Error }}{{ .Error }}{{ else }} {{ .Full }}{{ end }} ",
+          "template": "\uE738 {{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }} ",
           "type": "java"
         },
         {
