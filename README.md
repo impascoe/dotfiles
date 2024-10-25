@@ -8,6 +8,8 @@ To use this, make sure you are using a Fedora based distribution, as this uses `
 Also, make sure if you actually use this, that flatpak is installed, as this also uses `flatpak update` at the same time for
 my convenience.
 
+To use this, just source `sdu.sh` and call `sdu`.
+
 ## config.jsonc
 This is just my custom fastfetch config file.
 
